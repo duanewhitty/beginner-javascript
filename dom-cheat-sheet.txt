@@ -1,0 +1,54 @@
+Selecting Elements
+
+script tag goes before closing body tag
+
+could also wrap code in a function. Let's call the function
+init(), i.e.,
+
+function init() {
+    const p = document.querySelector('p');
+    console.log(p);
+}
+
+document.addEventListener('DOMContentLoaded', init);
+
+The above example runs the code after the DOM has been loaded by the browser
+
+two most often used methods
+1) document.querySelector()
+2) document.querySelectorAll()
+
+Element Properties and Methods
+listing properties, use console.dir
+
+Properties
+
+textContent gets everything
+innerText is just human readable text
+
+innerHTML - shows just the inner HTML contained within an element
+outerHTML - shows the containing HTML of the element
+
+More efficient way to insert text before or after an element instead of appending 
+to textContent or innerText properties is to use
+the method element.insertAdjacentText()
+
+Working with Classes
+
+add, remove, toggle (on/off) classes
+
+const pic = document.querySelector('.nice');
+pic.classList.add('open');
+pic.classList.remove('cool');
+
+function toggleRound() {
+    pic.classList.toggle('round');
+}
+
+pic.addEventListener('click', toggleRound);
+
+A lot of JavaScript interaction is accomplished by adding or removing classes
+
+To get the classes on an element, use className property
+
+
