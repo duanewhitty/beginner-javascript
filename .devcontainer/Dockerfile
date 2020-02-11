@@ -17,7 +17,7 @@ ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
 # Set to false to skip installing zsh and Oh My ZSH!
-ARG INSTALL_ZSH="true"
+ARG INSTALL_ZSH="false"
 
 # Location and expected SHA for common setup script - SHA generated on release
 ARG COMMON_SCRIPT_SOURCE="https://raw.githubusercontent.com/microsoft/vscode-dev-containers/master/script-library/common-debian.sh"
