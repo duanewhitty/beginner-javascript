@@ -67,7 +67,7 @@ RUN apt-get update \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*\
     && git config --global credential.helper cache\
-    && git congig --global credential.helper 'cache --timeout=86400'
+    && git config --global credential.helper 'cache --timeout=86400'
 
 # Switch back to dialog for any ad-hoc use of apt-get
 ENV DEBIAN_FRONTEND=dialog
